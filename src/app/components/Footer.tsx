@@ -92,7 +92,7 @@ export function Footer() {
               </div>
               <div style={{ display: "flex", gap: 12, color: "rgba(245, 241, 232, 0.76)" }}>
                 <Mail size={18} color="#cea82f" strokeWidth={1.8} />
-                <span>info@example.com</span>
+                <span>etalonniy.dom@yandex.ru</span>
               </div>
               <a
                 href={CONTACT_PHONE_URL}
