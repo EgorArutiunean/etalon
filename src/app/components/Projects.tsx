@@ -64,7 +64,7 @@ export function Projects() {
       style={{
         background: "#0b0b0c",
         padding: "96px 20px",
-        fontFamily: "Manrope, sans-serif",
+        fontFamily: "Montserrat, sans-serif",
       }}
     >
       <div style={{ maxWidth: 1440, margin: "0 auto" }}>
@@ -89,7 +89,7 @@ export function Projects() {
               lineHeight: 1.08,
               fontWeight: 700,
               textTransform: "uppercase",
-              fontFamily: "Montserrat, Manrope, sans-serif",
+              fontFamily: "Montserrat, sans-serif",
             }}
           >
             Галерея действующих объектов

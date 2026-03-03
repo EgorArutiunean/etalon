@@ -1,6 +1,6 @@
-import { ArrowDown, Send, ShieldCheck } from "lucide-react";
+import { ArrowDown, Send } from "lucide-react";
 
-const TELEGRAM_URL = "https://t.me/USERNAME";
+const CONTACT_PHONE_URL = "tel:+70000000000";
 
 export function Hero() {
   return (
@@ -12,7 +12,7 @@ export function Hero() {
         display: "flex",
         alignItems: "center",
         overflow: "hidden",
-        fontFamily: "Manrope, sans-serif",
+        fontFamily: "Montserrat, sans-serif",
       }}
     >
       <img
@@ -46,25 +46,6 @@ export function Hero() {
         }}
       >
         <div style={{ maxWidth: 760, display: "flex", flexDirection: "column", gap: 28 }}>
-          <div
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 10,
-              width: "fit-content",
-              borderRadius: 999,
-              padding: "10px 16px",
-              background: "rgba(245, 241, 232, 0.08)",
-              border: "1px solid rgba(245, 241, 232, 0.12)",
-              color: "#f5f1e8",
-              fontSize: 14,
-              fontWeight: 600,
-            }}
-          >
-            <ShieldCheck size={16} color="#cea82f" strokeWidth={1.8} />
-            Управляющая компания полного цикла
-          </div>
-
           <div>
             <h1
               style={{
@@ -75,7 +56,7 @@ export function Hero() {
                 color: "#f5f1e8",
                 textTransform: "uppercase",
                 letterSpacing: "0.04em",
-                fontFamily: "Montserrat, Manrope, sans-serif",
+                fontFamily: "Montserrat, sans-serif",
               }}
             >
               Эталонный Дом
@@ -96,9 +77,7 @@ export function Hero() {
 
           <div style={{ display: "flex", flexWrap: "wrap", gap: 16, alignItems: "center" }}>
             <a
-              href={TELEGRAM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={CONTACT_PHONE_URL}
               style={{
                 display: "inline-flex",
                 alignItems: "center",
@@ -126,7 +105,6 @@ export function Hero() {
               Связаться
             </a>
           </div>
-
         </div>
       </div>
 

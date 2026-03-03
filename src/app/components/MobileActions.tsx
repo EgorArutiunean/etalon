@@ -1,6 +1,6 @@
 import { Send } from "lucide-react";
 
-const TELEGRAM_URL = "https://t.me/USERNAME";
+const CONTACT_PHONE_URL = "tel:+70000000000";
 
 export function MobileActions() {
   return (
@@ -18,13 +18,11 @@ export function MobileActions() {
         backdropFilter: "blur(14px)",
         borderTop: "1px solid rgba(255, 255, 255, 0.08)",
         boxShadow: "0 -10px 28px rgba(0, 0, 0, 0.22)",
-        fontFamily: "Manrope, sans-serif",
+        fontFamily: "Montserrat, sans-serif",
       }}
     >
       <a
-        href={TELEGRAM_URL}
-        target="_blank"
-        rel="noopener noreferrer"
+        href={CONTACT_PHONE_URL}
         style={{
           display: "flex",
           alignItems: "center",

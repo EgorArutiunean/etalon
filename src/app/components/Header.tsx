@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, Send, X } from "lucide-react";
 
-const TELEGRAM_URL = "https://t.me/USERNAME";
+const CONTACT_PHONE_URL = "tel:+70000000000";
 
 const navItems = [
   { label: "О компании", id: "about" },
@@ -33,7 +33,7 @@ export function Header() {
         backdropFilter: "blur(14px)",
         borderBottom: scrolled ? "1px solid rgba(206, 168, 47, 0.18)" : "1px solid rgba(255, 255, 255, 0.08)",
         transition: "background 0.25s ease, border-color 0.25s ease",
-        fontFamily: "Manrope, sans-serif",
+        fontFamily: "Montserrat, sans-serif",
       }}
     >
       <div
@@ -113,9 +113,7 @@ export function Header() {
         </nav>
 
         <a
-          href={TELEGRAM_URL}
-          target="_blank"
-          rel="noopener noreferrer"
+          href={CONTACT_PHONE_URL}
           className="hidden md:flex"
           style={{
             alignItems: "center",
@@ -188,29 +186,6 @@ export function Header() {
                 {item.label}
               </a>
             ))}
-            <a
-              href={TELEGRAM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={closeMenu}
-              style={{
-                marginTop: 10,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                gap: 10,
-                background: "#cea82f",
-                color: "#0b0b0c",
-                borderRadius: 999,
-                padding: "14px 18px",
-                textDecoration: "none",
-                fontSize: 15,
-                fontWeight: 700,
-              }}
-            >
-              <Send size={17} strokeWidth={1.8} />
-              Связаться
-            </a>
           </nav>
         </div>
       )}

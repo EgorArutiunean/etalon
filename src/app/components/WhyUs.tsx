@@ -25,11 +25,11 @@ export function WhyUs() {
       style={{
         background: "#f7f7f8",
         padding: "96px 20px",
-        fontFamily: "Manrope, sans-serif",
+        fontFamily: "Montserrat, sans-serif",
       }}
     >
       <div style={{ maxWidth: 1440, margin: "0 auto" }}>
-        <div style={{ textAlign: "center", maxWidth: 800, margin: "0 auto 52px" }}>
+        <div className="whyus-header" style={{ textAlign: "center", maxWidth: 800, margin: "0 auto 52px" }}>
           <p
             style={{
               margin: 0,
@@ -50,7 +50,7 @@ export function WhyUs() {
               lineHeight: 1.08,
               fontWeight: 700,
               textTransform: "uppercase",
-              fontFamily: "Montserrat, Manrope, sans-serif",
+              fontFamily: "Montserrat, sans-serif",
             }}
           >
             Практичный сервис без лишних обещаний
@@ -71,6 +71,7 @@ export function WhyUs() {
             return (
               <article
                 key={reason.title}
+                className="whyus-card"
                 style={{
                   background: "#ffffff",
                   borderRadius: 24,
@@ -84,6 +85,7 @@ export function WhyUs() {
                 }}
               >
                 <div
+                  className="whyus-card-icon"
                   style={{
                     width: 58,
                     height: 58,
@@ -97,11 +99,11 @@ export function WhyUs() {
                 >
                   <Icon size={28} color="#cea82f" strokeWidth={1.8} />
                 </div>
-                <div>
-                  <h3 style={{ margin: 0, color: "#101828", fontSize: 22, lineHeight: 1.25, fontWeight: 700 }}>
+                <div className="whyus-card-content">
+                  <h3 className="whyus-card-title" style={{ margin: 0, color: "#101828", fontSize: 22, lineHeight: 1.25, fontWeight: 700 }}>
                     {reason.title}
                   </h3>
-                  <p style={{ margin: "14px 0 0", color: "#475467", fontSize: 16, lineHeight: 1.7 }}>
+                  <p className="whyus-card-copy" style={{ margin: "14px 0 0", color: "#475467", fontSize: 16, lineHeight: 1.7 }}>
                     {reason.desc}
                   </p>
                 </div>
@@ -110,6 +112,45 @@ export function WhyUs() {
           })}
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 767px) {
+          .whyus-header {
+            margin-bottom: 36px !important;
+          }
+
+          .whyus-card {
+            flex-direction: column;
+            align-items: stretch !important;
+            gap: 14px !important;
+            padding: 22px 18px !important;
+            border-radius: 20px !important;
+          }
+
+          .whyus-card-icon {
+            align-self: center;
+            width: 48px !important;
+            height: 48px !important;
+            border-radius: 14px !important;
+          }
+
+          .whyus-card-content {
+            width: 100%;
+          }
+
+          .whyus-card-title {
+            font-size: 18px !important;
+            line-height: 1.24 !important;
+            letter-spacing: -0.01em !important;
+          }
+
+          .whyus-card-copy {
+            margin-top: 10px !important;
+            font-size: 14px !important;
+            line-height: 1.58 !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }

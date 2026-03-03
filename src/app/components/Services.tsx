@@ -45,10 +45,10 @@ export function Services() {
     <section
       id="services"
       className="bg-[#f7f7f8] py-24"
-      style={{ fontFamily: "Manrope, sans-serif" }}
+      style={{ fontFamily: "Montserrat, sans-serif" }}
     >
       <div className="mx-auto max-w-[1200px] px-6 md:px-10">
-        <div style={{ textAlign: "center", maxWidth: 900, margin: "0 auto 56px" }}>
+        <div className="services-header" style={{ textAlign: "center", maxWidth: 900, margin: "0 auto 56px" }}>
           <p
             style={{
               margin: 0,
@@ -69,7 +69,7 @@ export function Services() {
               color: "#101828",
               fontWeight: 700,
               textTransform: "uppercase",
-              fontFamily: "Montserrat, Manrope, sans-serif",
+              fontFamily: "Montserrat, sans-serif",
             }}
           >
             Полный комплекс сопровождения объектов
@@ -82,7 +82,7 @@ export function Services() {
             return (
               <article
                 key={service.title}
-                className="flex h-full flex-col rounded-2xl border border-black/5 bg-white p-10 shadow-sm"
+                className="service-card flex h-full flex-col rounded-2xl border border-black/5 bg-white p-10 shadow-sm"
                 style={{
                   transition: "transform 0.2s ease, border-color 0.2s ease",
                 }}
@@ -96,6 +96,7 @@ export function Services() {
                 }}
               >
                 <div
+                  className="service-card-icon"
                   style={{
                     width: 56,
                     height: 56,
@@ -105,20 +106,54 @@ export function Services() {
                     alignItems: "center",
                     justifyContent: "center",
                     marginBottom: 18,
+                    alignSelf: "center",
                   }}
                 >
                   <Icon size={26} color="#cea82f" strokeWidth={1.8} />
                 </div>
-                <h3 style={{ margin: 0, color: "#101828", fontSize: 21, lineHeight: 1.3, fontWeight: 700 }}>
+                <h3 className="service-card-title" style={{ margin: 0, color: "#101828", fontSize: 21, lineHeight: 1.3, fontWeight: 700 }}>
                   {service.title}
                 </h3>
-                <p style={{ margin: "14px 0 0", color: "#475467", fontSize: 16, lineHeight: 1.7 }}>
+                <p className="service-card-copy" style={{ margin: "14px 0 0", color: "#475467", fontSize: 16, lineHeight: 1.7 }}>
                   {service.desc}
                 </p>
               </article>
             );
           })}
         </div>
+
+        <style>{`
+          @media (max-width: 767px) {
+            .services-header {
+              margin-bottom: 36px !important;
+            }
+
+            .service-card {
+              padding: 22px 18px !important;
+              border-radius: 20px !important;
+            }
+
+            .service-card-icon {
+              width: 48px !important;
+              height: 48px !important;
+              margin-bottom: 14px !important;
+            }
+
+            .service-card-title {
+              font-size: 18px !important;
+              line-height: 1.24 !important;
+              letter-spacing: -0.01em !important;
+              text-align: center;
+            }
+
+            .service-card-copy {
+              margin-top: 10px !important;
+              font-size: 14px !important;
+              line-height: 1.58 !important;
+              text-align: center;
+            }
+          }
+        `}</style>
       </div>
     </section>
   );

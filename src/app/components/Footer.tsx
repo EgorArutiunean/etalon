@@ -1,6 +1,6 @@
 import { MapPin, Mail, Send } from "lucide-react";
 
-const TELEGRAM_URL = "https://t.me/USERNAME";
+const CONTACT_PHONE_URL = "tel:+70000000000";
 
 export function Footer() {
   return (
@@ -10,7 +10,7 @@ export function Footer() {
         background: "#111113",
         borderTop: "1px solid rgba(255, 255, 255, 0.08)",
         padding: "72px 20px 32px",
-        fontFamily: "Manrope, sans-serif",
+        fontFamily: "Montserrat, sans-serif",
       }}
     >
       <div style={{ maxWidth: 1440, margin: "0 auto" }}>
@@ -95,9 +95,7 @@ export function Footer() {
                 <span>info@example.com</span>
               </div>
               <a
-                href={TELEGRAM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={CONTACT_PHONE_URL}
                 style={{
                   marginTop: 4,
                   display: "inline-flex",

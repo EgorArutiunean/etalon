@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div
       style={{
-        fontFamily: "Manrope, sans-serif",
+        fontFamily: "Montserrat, sans-serif",
         color: "#1f2933",
         background: "#0b0b0c",
         overflowX: "hidden",

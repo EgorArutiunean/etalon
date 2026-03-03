@@ -19,7 +19,7 @@ export function About() {
       style={{
         background: "#f7f7f8",
         padding: "96px 20px",
-        fontFamily: "Manrope, sans-serif",
+        fontFamily: "Montserrat, sans-serif",
       }}
     >
       <div style={{ maxWidth: 1440, margin: "0 auto" }}>
@@ -34,6 +34,7 @@ export function About() {
             className="about-grid"
           >
             <div
+              className="about-main-card"
               style={{
                 background: "#ffffff",
                 borderRadius: 28,
@@ -61,6 +62,7 @@ export function About() {
               </div>
 
               <p
+                className="about-label"
                 style={{
                   margin: 0,
                   color: "#cea82f",
@@ -73,27 +75,29 @@ export function About() {
                 О компании
               </p>
               <h2
+                className="about-title"
                 style={{
                   margin: "14px 0 20px",
                   color: "#101828",
                   fontSize: "clamp(32px, 4vw, 48px)",
                   fontWeight: 700,
                   lineHeight: 1.08,
-                  fontFamily: "Montserrat, Manrope, sans-serif",
+                  fontFamily: "Montserrat, sans-serif",
                   textTransform: "uppercase",
                 }}
               >
                 {title}
               </h2>
-              <p style={{ margin: 0, color: "#475467", fontSize: 18, lineHeight: 1.8 }}>
+              <p className="about-copy" style={{ margin: 0, color: "#475467", fontSize: 18, lineHeight: 1.8 }}>
                 {firstParagraph}
               </p>
-              <p style={{ margin: "18px 0 0", color: "#475467", fontSize: 18, lineHeight: 1.8 }}>
+              <p className="about-copy about-copy-second" style={{ margin: "18px 0 0", color: "#475467", fontSize: 18, lineHeight: 1.8 }}>
                 {secondParagraph}
               </p>
             </div>
 
             <div
+              className="about-highlights"
               style={{
                 display: "grid",
                 gridTemplateColumns: "1fr",
@@ -105,6 +109,7 @@ export function About() {
                 return (
                   <div
                     key={item.label}
+                    className="about-highlight-card"
                     style={{
                       background: "#ffffff",
                       borderRadius: 24,
@@ -185,6 +190,46 @@ export function About() {
         @media (max-width: 900px) {
           .about-grid {
             grid-template-columns: 1fr !important;
+          }
+        }
+
+        @media (max-width: 767px) {
+          .about-main-card {
+            padding: 26px !important;
+            border-radius: 24px !important;
+          }
+
+          .about-label {
+            font-size: 11px !important;
+            letter-spacing: 0.12em !important;
+          }
+
+          .about-title {
+            margin: 12px 0 16px !important;
+            font-size: 28px !important;
+            line-height: 1.12 !important;
+            letter-spacing: -0.01em !important;
+          }
+
+          .about-copy {
+            font-size: 15px !important;
+            line-height: 1.62 !important;
+            max-width: 34ch;
+          }
+
+          .about-copy-second {
+            margin-top: 14px !important;
+          }
+
+          .about-highlights {
+            gap: 12px !important;
+          }
+
+          .about-highlight-card {
+            padding: 18px 16px !important;
+            min-height: 88px !important;
+            border-radius: 20px !important;
+            gap: 12px !important;
           }
         }
       `}</style>
