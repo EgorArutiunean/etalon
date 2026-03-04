@@ -6,6 +6,7 @@ export function Footer() {
   return (
     <footer
       id="contacts"
+      className="section-anchor"
       style={{
         background: "#111113",
         borderTop: "1px solid rgba(255, 255, 255, 0.08)",

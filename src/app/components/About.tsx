@@ -16,6 +16,7 @@ export function About() {
   return (
     <section
       id="about"
+      className="section-anchor"
       style={{
         background: "#f7f7f8",
         padding: "96px 20px",
@@ -195,7 +196,7 @@ export function About() {
 
         @media (max-width: 767px) {
           .about-main-card {
-            padding: 26px !important;
+            padding: 22px !important;
             border-radius: 24px !important;
           }
 
@@ -212,8 +213,8 @@ export function About() {
           }
 
           .about-copy {
-            font-size: 15px !important;
-            line-height: 1.62 !important;
+            font-size: 14px !important;
+            line-height: 1.56 !important;
             max-width: 34ch;
           }
 

@@ -61,6 +61,7 @@ export function Projects() {
   return (
     <section
       id="projects"
+      className="section-anchor"
       style={{
         background: "#0b0b0c",
         padding: "96px 20px",
@@ -97,12 +98,12 @@ export function Projects() {
         </div>
 
         <div
-          className="projects-gallery lg:h-[560px] lg:items-stretch"
+          className="projects-gallery lg:h-[480px]"
           style={{
             display: "grid",
             gridTemplateColumns: "minmax(0, 2fr) minmax(280px, 1fr)",
             gap: 24,
-            alignItems: "start",
+            alignItems: "stretch",
           }}
         >
           <article
@@ -111,7 +112,7 @@ export function Projects() {
               position: "relative",
               borderRadius: 28,
               overflow: "hidden",
-              minHeight: 560,
+              minHeight: 420,
               background: "#161618",
               border: "1px solid rgba(255, 255, 255, 0.08)",
             }}
@@ -207,10 +208,11 @@ export function Projects() {
           </article>
 
           <div
-            className="lg:h-full lg:grid-rows-3"
+            className="h-full"
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+              gridTemplateRows: "repeat(3, minmax(0, 1fr))",
               gap: 16,
               gridAutoRows: "1fr",
             }}
@@ -261,11 +263,12 @@ export function Projects() {
       </div>
 
       <style>{`
-        @media (max-width: 768px) {
-          .projects-gallery {
-            grid-template-columns: 1fr !important;
+          @media (max-width: 768px) {
+            .projects-gallery {
+              grid-template-columns: 1fr !important;
+              height: auto !important;
+            }
           }
-        }
       `}</style>
     </section>
   );

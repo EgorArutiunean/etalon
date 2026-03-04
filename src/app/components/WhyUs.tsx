@@ -22,6 +22,7 @@ export function WhyUs() {
   return (
     <section
       id="why-us"
+      className="section-anchor"
       style={{
         background: "#f7f7f8",
         padding: "96px 20px",
@@ -122,8 +123,8 @@ export function WhyUs() {
           .whyus-card {
             flex-direction: column;
             align-items: stretch !important;
-            gap: 14px !important;
-            padding: 22px 18px !important;
+            gap: 12px !important;
+            padding: 18px 16px !important;
             border-radius: 20px !important;
           }
 
@@ -139,15 +140,15 @@ export function WhyUs() {
           }
 
           .whyus-card-title {
-            font-size: 18px !important;
-            line-height: 1.24 !important;
+            font-size: 17px !important;
+            line-height: 1.22 !important;
             letter-spacing: -0.01em !important;
           }
 
           .whyus-card-copy {
-            margin-top: 10px !important;
+            margin-top: 8px !important;
             font-size: 14px !important;
-            line-height: 1.58 !important;
+            line-height: 1.52 !important;
           }
         }
       `}</style>

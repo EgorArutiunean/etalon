@@ -44,7 +44,7 @@ export function Services() {
   return (
     <section
       id="services"
-      className="bg-[#f7f7f8] py-24"
+      className="section-anchor bg-[#f7f7f8] py-24"
       style={{ fontFamily: "Montserrat, sans-serif" }}
     >
       <div className="mx-auto max-w-[1200px] px-6 md:px-10">
@@ -129,27 +129,27 @@ export function Services() {
             }
 
             .service-card {
-              padding: 22px 18px !important;
+              padding: 18px 16px !important;
               border-radius: 20px !important;
             }
 
             .service-card-icon {
               width: 48px !important;
               height: 48px !important;
-              margin-bottom: 14px !important;
+              margin-bottom: 12px !important;
             }
 
             .service-card-title {
-              font-size: 18px !important;
-              line-height: 1.24 !important;
+              font-size: 17px !important;
+              line-height: 1.22 !important;
               letter-spacing: -0.01em !important;
               text-align: center;
             }
 
             .service-card-copy {
-              margin-top: 10px !important;
+              margin-top: 8px !important;
               font-size: 14px !important;
-              line-height: 1.58 !important;
+              line-height: 1.52 !important;
               text-align: center;
             }
           }
