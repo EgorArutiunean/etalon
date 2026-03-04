@@ -1,48 +1,48 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import projectAkademicheskiyImage from "../../assets/images/project-akademicheskiy.jpg";
+import projectCentralParkImage from "../../assets/images/project-central-park.jpg";
+import projectMeridianImage from "../../assets/images/project-meridian.jpg";
+import projectNorthGateImage from "../../assets/images/project-north-gate.jpg";
+import projectOrbitImage from "../../assets/images/project-orbit.jpg";
+import projectRiverLineImage from "../../assets/images/project-river-line.jpg";
 
 const projects = [
   {
     id: 1,
     title: "Паркинг River Line",
     location: "Москва, Северо-Западный округ",
-    image:
-      "https://images.unsplash.com/photo-1758957851828-5179f0e06985?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjByZXNpZGVudGlhbCUyMGJ1aWxkaW5nJTIwZXh0ZXJpb3IlMjBsdXh1cnl8ZW58MXx8fHwxNzcyMzk0MDE2fDA&ixlib=rb-4.1.0&q=80&w=1400",
+    image: projectRiverLineImage,
   },
   {
     id: 2,
     title: "Жилой квартал Академический",
     location: "Москва, Юго-Западный округ",
-    image:
-      "https://images.unsplash.com/photo-1596224960249-be974914f8fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcGFydG1lbnQlMjBidWlsZGluZyUyMGNvdXJ0eWFyZCUyMG1vc2Nvd3xlbnwxfHx8fDE3NzIzOTQwMTZ8MA&ixlib=rb-4.1.0&q=80&w=1400",
+    image: projectAkademicheskiyImage,
   },
   {
     id: 3,
     title: "Клубный дом Meridian",
     location: "Москва, центр",
-    image:
-      "https://images.unsplash.com/photo-1713832139677-a03a41b602e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBhcGFydG1lbnQlMjBsb2JieSUyMGludGVyaW9yfGVufDF8fHx8MTc3MjM5NDAxNnww&ixlib=rb-4.1.0&q=80&w=1400",
+    image: projectMeridianImage,
   },
   {
     id: 4,
     title: "Подземный паркинг Orbit",
     location: "Химки, Московская область",
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1400",
+    image: projectOrbitImage,
   },
   {
     id: 5,
     title: "Апарт-комплекс North Gate",
     location: "Красногорск, Московская область",
-    image:
-      "https://images.unsplash.com/photo-1460317442991-0ec209397118?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1400",
+    image: projectNorthGateImage,
   },
   {
     id: 6,
     title: "Жилой дом Central Park",
     location: "Москва, Западный округ",
-    image:
-      "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1400",
+    image: projectCentralParkImage,
   },
 ];
 

@@ -1,4 +1,5 @@
 import { ArrowDown, Send } from "lucide-react";
+import heroImage from "../../assets/images/hero.jpg";
 
 const CONTACT_PHONE_URL = "tel:+70000000000";
 
@@ -16,7 +17,7 @@ export function Hero() {
       }}
     >
       <img
-        src="https://images.unsplash.com/photo-1758957851828-5179f0e06985?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjByZXNpZGVudGlhbCUyMGJ1aWxkaW5nJTIwZXh0ZXJpb3IlMjBsdXh1cnl8ZW58MXx8fHwxNzcyMzk0MDE2fDA&ixlib=rb-4.1.0&q=80&w=1600"
+        src={heroImage}
         alt="Современный жилой объект под управлением компании"
         style={{
           position: "absolute",
